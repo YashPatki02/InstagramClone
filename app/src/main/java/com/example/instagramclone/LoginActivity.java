@@ -35,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
         btnSignUp = findViewById(R.id.btnSignUp);
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
                 ParseUser.logInInBackground(username, password, new LogInCallback() {
                     @Override
                     public void done(ParseUser user, ParseException e) {
-                        if (e != null) {
+                        if (user == null) {
                             Toast.makeText(LoginActivity.this, "Issue with Login", Toast.LENGTH_SHORT).show();
 
                             Log.e(TAG, "Issue with Login", e);
