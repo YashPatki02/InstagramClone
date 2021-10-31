@@ -43,6 +43,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 I had some issues working with the Login but realized it was due to bad Wifi connection and wrong code.
 
 
+
+
+
 **InstagramClone - Part 1** is a photo sharing app similar to Instagram but using Parse as its backend.
 
 Time spent: **6** hours spent in total
